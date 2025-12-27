@@ -22,7 +22,12 @@ public class EmailGeneratorService {
                     })
             }
         );
+
+        return extractResponseContent(response);
     };
+
+    private String extractResponseContent(String response) {};
+
 
     private String buildPrompt(EmailRequest emailRequest) {
         StringBuilder prompt = new StringBuilder();
